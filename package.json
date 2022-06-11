@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-file-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RockStar666by/nodejs-file-manager.git"
+  },
+  "author": "RockStar666by",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RockStar666by/nodejs-file-manager/issues"
+  },
+  "homepage": "https://github.com/RockStar666by/nodejs-file-manager#readme"
+}
