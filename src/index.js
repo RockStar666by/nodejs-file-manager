@@ -8,6 +8,7 @@ import { list } from './utils/list.js';
 import { add, read, rename, copy, move, deleteFile } from './fs/index.js';
 import { calculateHash } from './hash/calcHash.js';
 import { osInfo } from './os/os.js';
+import { compressFile, decompressFile } from './compress/compress.js';
 
 const rl = readline.createInterface({ input, output });
 const userName = parseUserName();
@@ -59,6 +60,12 @@ const question = () => {
         break;
       case 'os':
         osInfo(args);
+        break;
+      case 'compress':
+        await compressFile(args);
+        break;
+      case 'decompress':
+        await decompressFile(args);
         break;
       default:
         console.log('\x1b[33m%s\x1b[0m', 'Invalid input');
