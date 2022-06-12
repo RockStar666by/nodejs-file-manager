@@ -7,6 +7,7 @@ import { cd } from './cli/cd.js';
 import { list } from './utils/list.js';
 import { add, read, rename, copy, move, deleteFile } from './fs/index.js';
 import { calculateHash } from './hash/calcHash.js';
+import { osInfo } from './os/os.js';
 
 const rl = readline.createInterface({ input, output });
 const userName = parseUserName();
@@ -55,6 +56,9 @@ const question = () => {
         break;
       case 'hash':
         await calculateHash(args);
+        break;
+      case 'os':
+        osInfo(args);
         break;
       default:
         console.log('\x1b[33m%s\x1b[0m', 'Invalid input');
